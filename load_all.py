@@ -13,7 +13,6 @@ from sql import create_pool, create_db
 logging.basicConfig(format=u'%(filename)s [LINE:%(lineno)d] #%(levelname)-8s [%(asctime)s]  %(message)s',
                     level=logging.INFO)
 # loop = asyncio.get_event_loop()
-# Поток нам не нужен, т.к. он и так создается в диспатчере.
 
 # Set up storage (either in Redis or Memory)
 storage = MemoryStorage()
